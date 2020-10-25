@@ -6,4 +6,4 @@ def is_sublist(larger, smaller):
     return a == b
 
 
-print(is_sublist([1], [1, 2, 3, 4]))
+print(is_sublist([1, 2, 3, 4], [1]))
