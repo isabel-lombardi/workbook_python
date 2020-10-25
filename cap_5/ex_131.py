@@ -1,6 +1,7 @@
 # Infix to Postfix
-OPERATORS = {'+', '-', '*', '/', '(', ')', '^'}
-PRIORITY = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
+"""I had trouble doing these two exercises with algorithms"""
+operators = {"+", "-", "*", "/", "(", ")", "^"}
+priority = {"+": 1, "-": 1, "*": 2, "/": 2, "^": 3}
 
 
 def infix_to_postfix(exp):
@@ -8,23 +9,24 @@ def infix_to_postfix(exp):
     postfix = ''
 
     for ch in exp:
-        if ch not in OPERATORS:
+        if ch not in operators:
             postfix += ch
-        elif ch == '(':  #
-            stack.append('(')
-        elif ch == ')':
-            while stack and stack[-1] != '(':
+        elif ch == "(":
+            stack.append("(")
+        elif ch == ")":
+            while stack and stack[-1] != "(":
                 postfix += stack.pop()
             stack.pop()
         else:
-            while stack and stack[-1] != '(' and PRIORITY[ch] <= PRIORITY[stack[-1]]:
+            while stack and stack[-1] != "(" and priority[ch] <= priority[stack[-1]]:
                 postfix += stack.pop()
             stack.append(ch)
         while stack:
             postfix += stack.pop()
+
     return postfix
 
 
-expression = input('Enter infix expression: ')
-print('Infix expression: ', expression)
-print('Postfix expression: ', infix_to_postfix(expression))
+expression = input("Enter infix expression: ")
+print("Infix expression: {}".format(expression))
+print("Postfix expression: {}".format(infix_to_postfix(expression)))
