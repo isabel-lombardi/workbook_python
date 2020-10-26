@@ -17,13 +17,13 @@ def number_english(n):
         if n % 10 == 0:
             return number[n]
         else:
-            return number[n // 10 * 10] + ' ' + number[n % 10]
+            return number[n // 10 * 10] + " " + number[n % 10]
 
     if n < thousand:
         if n % 100 == 0:
-            return number[n // 100] + ' hundred'
+            return number[n // 100] + " hundred"
         else:
-            return number[n // 100] + ' hundred ' + number_english(n % 100)
+            return number[n // 100] + " hundred " + number_english(n % 100)
 
 
 def main():
