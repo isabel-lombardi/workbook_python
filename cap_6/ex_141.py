@@ -27,7 +27,7 @@ def number_english(n):
 
 
 def main():
-    choice = int(randint(10, 999))
+    choice = int(randint(1, 999))
     print(number_english(choice))
     for x in range(1, 999):
         print(number_english(x))
