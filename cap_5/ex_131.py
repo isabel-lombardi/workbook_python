@@ -2,7 +2,7 @@
 from cap_5.ex_130 import unary
 from cap_5.ex_129 import token
 
-o = {"+", "-", "*", "/", "u-", "u+", "^"}
+o = ["+", "-", "*", "/", "u-", "u+", "^"]
 
 
 def precedence(x):
