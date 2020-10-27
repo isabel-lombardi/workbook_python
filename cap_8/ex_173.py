@@ -1,11 +1,11 @@
 # Total the Values
 
 def user_total():
-    line = input("Enter a number (blank to quit): ")
-    if line == "":  # Base case
+    number = input("Enter a number (blank to quit): ")
+    if number == "":  # Base case
         return 0
     else:  # Recursive case
-        return float(line) + user_total()
+        return float(number) + user_total()
 
 
 def main():
