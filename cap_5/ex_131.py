@@ -2,7 +2,14 @@
 from cap_5.ex_130 import unary
 from cap_5.ex_129 import token
 
-o = ["+", "-", "*", "/", "u-", "u+", "^"]
+
+def is_integer(s):
+    s = s.strip()
+    if (s[0] == "+" or s[0] == "-") and s[1:].isdigit():
+        return True
+    if s.isdigit():
+        return True
+    return False
 
 
 def precedence(x):
@@ -16,44 +23,43 @@ def precedence(x):
         res = 4
     else:
         res = -1
-        print("Is not operator ")
+        print("Is not an operator")
     return res
 
 
-def infix_to_postfix(exp):
-    marked = unary(exp)
+def algorithm(tokens):
+    marked = unary(tokens)
     operators = []
     postfix = []
 
     for ch in marked:
-        if ch not in o:
+        if is_integer(ch):
             postfix.append(ch)
-        elif ch in o:
-            while operators != [] and operators[len(operators) - 1] != "(" and \
-                    precedence(ch) < precedence(operators[len(operators) - 1]):
-                x = operators.pop(len(operators) - 1)
+        elif ch == "+" or ch == "-" or ch == "*" or ch == "/" or ch == "^" or ch == "u-" or ch == "u+":
+            while operators != [] and operators[len(operators)-1] != '(' \
+              and precedence(ch) < precedence(operators[len(operators) - 1]):
+                x = operators.pop(len(operators)-1)
                 postfix.append(x)
             operators.append(ch)
-
         elif ch == "(":
             operators.append(ch)
         elif ch == ")":
-            while operators[len(operators) - 1] != "(":
-                x = operators.pop(len(operators) - 1)
+            while operators[len(operators)-1] != "(":
+                x = operators.pop(len(operators)-1)
                 postfix.append(x)
             operators.remove("(")
 
-    while operators != []:
-        x = operators.pop(len(operators) - 1)
+    while operators:
+        x = operators.pop(len(operators)-1)
         postfix.append(x)
 
     return postfix
 
 
 def main():
-    expression = input("Enter infix expression: ").replace(" ", "")
-    exp = token(expression)
-    print("Postfix expression: {}".format(infix_to_postfix(exp)))
+    exp = input("Enter a mathematical expression: ")
+    tokens = token(exp)
+    print(algorithm(tokens))
 
 
 main()
