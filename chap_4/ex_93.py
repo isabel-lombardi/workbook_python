@@ -1,5 +1,5 @@
 # Next Prime
-from cap_4 import ex_92
+from chap_4 import ex_92
 
 
 def next_prime(n):

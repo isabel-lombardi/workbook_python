@@ -1,5 +1,5 @@
 # The Twelve Days of Christmas
-from cap_4 import ordinal
+from chap_4 import ordinal
 
 
 def verse(n):

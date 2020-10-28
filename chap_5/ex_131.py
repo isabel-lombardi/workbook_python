@@ -1,6 +1,6 @@
 # Infix to Postfix
-from cap_5.ex_130 import unary
-from cap_5.ex_129 import token
+from chap_5.ex_130 import unary
+from chap_5.ex_129 import token
 
 
 def is_integer(s):

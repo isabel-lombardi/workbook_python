@@ -1,5 +1,5 @@
 # Magic date
-from cap_4.ex_100 import day_in_a_month
+from chap_4.ex_100 import day_in_a_month
 
 
 def magic_date(d, m, y):

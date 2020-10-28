@@ -1,5 +1,5 @@
 # Word by Word Palindromes
-from cap_5.ex_117 import only_words
+from chap_5.ex_117 import only_words
 
 
 def word_palindromes(s):

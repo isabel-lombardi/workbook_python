@@ -1,4 +1,4 @@
-from cap_4.ex_98 import *
+from chap_4.ex_98 import *
 
 
 def dec2n(num, new_base):

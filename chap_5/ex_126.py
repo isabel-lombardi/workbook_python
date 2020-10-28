@@ -1,5 +1,5 @@
 # Dealing Hands of Cards
-from cap_5.ex_125 import *
+from chap_5.ex_125 import *
 
 
 def deal(players, num_cards, deck):

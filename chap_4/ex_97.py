@@ -1,7 +1,7 @@
 # Random Good Password
 
-from cap_4.ex_94 import r_pass
-from cap_4.ex_96 import check_pas
+from chap_4.ex_94 import r_pass
+from chap_4.ex_96 import check_pas
 
 
 def main():

@@ -1,7 +1,7 @@
 # Perfect Numbers
 """The previous exercises were done from the first edition of the workbook.
    The exercises that follow will be based on the second edition."""
-from cap_5.ex_109 import proper_divisor
+from chap_5.ex_109 import proper_divisor
 
 test = 10000
 

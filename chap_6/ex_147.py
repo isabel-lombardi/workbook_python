@@ -1,5 +1,5 @@
 # Checking for a Winning Card
-from cap_6.ex_146 import *
+from chap_6.ex_146 import *
 from random import randrange
 
 
