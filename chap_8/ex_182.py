@@ -1,4 +1,4 @@
-# Spelling with Element Symbols
+# Spelling with element Symbols
 from re import split
 
 

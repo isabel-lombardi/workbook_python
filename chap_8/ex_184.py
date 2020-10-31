@@ -1,4 +1,4 @@
-# Flatten a List
+# Flatten a list
 
 
 def flatten(data):

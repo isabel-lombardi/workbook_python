@@ -1,4 +1,4 @@
-# Element Sequences
+# Element sequences
 from re import split
 
 

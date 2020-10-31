@@ -1,4 +1,4 @@
-# Run-Length Encoding
+# Run-Length encoding
 def encode(text):
     if not text:
         return ""

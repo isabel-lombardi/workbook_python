@@ -1,4 +1,4 @@
-# Possible Change
+# Possible change
 from itertools import combinations_with_replacement
 coins = [0.25, 0.10, 0.05, 0.01]
 

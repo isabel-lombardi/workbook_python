@@ -1,8 +1,4 @@
 # Square root
-"""
-abs() ???
-"""
-
 
 def square_root(n, guess=1.0):
     if abs(guess ** 2 - n) < 10 ** (-12) * n:

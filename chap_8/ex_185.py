@@ -1,4 +1,4 @@
-# Run-Length Decoding
+# Run-Length decoding
 
 def decode(text):
     if not text:

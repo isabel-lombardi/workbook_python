@@ -1,4 +1,4 @@
-# String Edit Distance
+# String edit Distance
 
 def string_distance(s, t):
     if len(s) == 0:

@@ -115,4 +115,4 @@
 115,Uup,Ununpentium
 116,Lv,Livermorium
 117,Uus,Ununseptium
-118,Uuo,Ununoctium
+118,Uuo,ununoctium
