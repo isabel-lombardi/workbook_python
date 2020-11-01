@@ -67,8 +67,8 @@ def main():
     diagonal_test = create_card()
     diagonal_test["B"][0] = "∎"
     diagonal_test["I"][1] = "∎"
-    diagonal_test["N"][3] = "∎"
-    diagonal_test["G"][4] = "∎"
+    diagonal_test["N"][2] = "∎"
+    diagonal_test["G"][3] = "∎"
     print_dict_table(diagonal_test)
 
     cards = create_card()
