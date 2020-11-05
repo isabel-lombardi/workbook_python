@@ -1,6 +1,4 @@
 # Run-Length decoding
-from chap_8.ex_184 import flatten
-
 
 def decode(text):
     if not text:
@@ -8,7 +6,7 @@ def decode(text):
     else:
         char = text[0]
         quantity = text[1]
-        return [char] * quantity + flatten(decode(text[2:]))
+        return [char] * quantity + decode(text[2:])
 
 
 def main():
