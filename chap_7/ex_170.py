@@ -20,4 +20,4 @@ for file_name in argv[1: len(argv)]:
 
     except:
         print("A problem was encountered with file ’%s’." % file_name)
-        print("Moving on to the next file...")
+        
